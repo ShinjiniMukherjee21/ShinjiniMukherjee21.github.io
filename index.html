@@ -18,6 +18,12 @@
             font-size: 28px;
             letter-spacing: 1px;
         }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            letter-spacing: 1px;
+            margin-top: 50px;
+        }
         .year-section {
             margin: 40px 0;
             padding: 20px;
@@ -48,7 +54,7 @@
             transform: scale(1.05);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .img-date {
+        .image-date {
             font-size: 12px;
             color: #777;
             text-align: center;
@@ -67,21 +73,21 @@
             background-color: rgba(0, 0, 0, 0.8);
             justify-content: center;
             align-items: center;
-            overflow-y: auto; /* Enable vertical scrolling */
+            overflow-y: auto;
         }
         .modal-content {
-            max-width: 80%;  /* Adjust this if you want the modal to be wider or narrower */
-            max-height: 80vh; /* Ensure the content is within 80% of the viewport height */
+            max-width: 80%;
+            max-height: 80vh;
             position: relative;
             margin: auto;
         }
         .modal-content img {
             width: 100%;
-            height: auto;  /* Maintain aspect ratio */
-            max-width: 500px;  /* Limit the zoomed-in image size */
-            max-height: 80vh;  /* Ensure the image does not exceed 80% of the viewport height */
+            height: auto;
+            max-width: 500px;
+            max-height: 80vh;
             display: block;
-            margin: 0 auto;  /* Center the image horizontally */
+            margin: 0 auto;
             border-radius: 5px;
         }
         .close {
@@ -116,6 +122,314 @@
 </head>
 <body>
 
+    <h1>Temperature Data from Noatak and Channel</h1>
+
+    <!-- Noatak Section -->
+    <h2>Noatak</h2>
+
+    <!-- 2021 Noatak Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2021</div>
+            <div>
+                <img src="20210909-Noatak-TempFix.jpeg" alt="Graph for 09/09/2021" onclick="openModal('20210909-Noatak-TempFix.jpeg')">
+                <div class="image-date">09/09/2021</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2022 Noatak Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2022</div>
+            <div>
+                <img src="20220624-Noatak-TempFix.jpeg" alt="Graph for 06/24/2022" onclick="openModal('20220624-Noatak-TempFix.jpeg')">
+                <div class="image-date">06/24/2022</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2023 Noatak Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2023</div>
+            <div>
+                <img src="20230711-Noatak-TempFix.jpeg" alt="Graph for 07/11/2023" onclick="openModal('20230711-Noatak-TempFix.jpeg')">
+                <div class="image-date">07/11/2023</div>
+            </div>
+            <div>
+                <img src="20230921-Noatak-A-TempFix.jpeg" alt="Graph for 09/21/2023" onclick="openModal('20230921-Noatak-A-TempFix.jpeg')">
+                <div class="image-date">09/21/2023</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2024 Noatak Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2024</div>
+            <div>
+                <img src="20240709-Noatak-TempFix.jpeg" alt="Graph for 07/09/2024" onclick="openModal('20240709-Noatak-TempFix.jpeg')">
+                <div class="image-date">07/09/2024</div>
+            </div>
+            <div>
+                <img src="20240815-Noatak-TempFix.jpeg" alt="Graph for 08/15/2024" onclick="openModal('20240815-Noatak-TempFix.jpeg')">
+                <div class="image-date">08/15/2024</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2025 Noatak Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2025</div>
+            <div>
+                <img src="20250925-Noatak-TempFix.jpeg" alt="Graph for 09/25/2025" onclick="openModal('20250925-Noatak-TempFix.jpeg')">
+                <div class="image-date">09/25/2025</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Channel Section -->
+    <h2>Channel</h2>
+
+    <!-- 2021 Channel Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2021</div>
+            <div>
+                <img src="20210818-Channel-TempFix.jpeg" alt="Graph for 08/18/2021" onclick="openModal('20210818-Channel-TempFix.jpeg')">
+                <div class="image-date">08/18/2021</div>
+            </div>
+            <div>
+                <img src="20210831-Channel-TempFix.jpeg" alt="Graph for 08/31/2021" onclick="openModal('20210831-Channel-TempFix.jpeg')">
+                <div class="image-date">08/31/2021</div>
+            </div>
+            <div>
+                <img src="20210909-Channel-TempFix.jpeg" alt="Graph for 09/09/2021" onclick="openModal('20210909-Channel-TempFix.jpeg')">
+                <div class="image-date">09/09/2021</div>
+            </div>
+            <div>
+                <img src="20211013-Channel-TempFix.jpeg" alt="Graph for 10/13/2021" onclick="openModal('20211013-Channel-TempFix.jpeg')">
+                <div class="image-date">10/13/2021</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2022 Channel Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2022</div>
+            <div>
+                <img src="20220624-Channel-TempFix.jpeg" alt="Graph for 06/24/2022" onclick="openModal('20220624-Channel-TempFix.jpeg')">
+                <div class="image-date">06/24/2022</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2023 Channel Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2023</div>
+            <div>
+                <img src="20230815-Channel-TempFix.jpeg" alt="Graph for 08/15/2023" onclick="openModal('20230815-Channel-TempFix.jpeg')">
+                <div class="image-date">08/15/2023</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Iliviak</h2>
+    <!-- 2021 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2021</div>
+            <div>
+                <img src="20210818-Iliviak-TempFix.jpeg" alt="Graph for 08/18/2021" onclick="openModal('20210818-Iliviak-TempFix.jpeg')">
+                <div class="image-date">08/18/2021</div>
+            </div>
+            <div>
+                <img src="20210831-Iliviak-TempFix.jpeg" alt="Graph for 08/31/2021" onclick="openModal('20210831-Iliviak-TempFix.jpeg')">
+                <div class="image-date">08/31/2021</div>
+            </div>
+            <div>
+                <img src="20210909-Iliviak-TempFix.jpeg" alt="Graph for 09/09/2021" onclick="openModal('20210909-Iliviak-TempFix.jpeg')">
+                <div class="image-date">09/09/2021</div>
+            </div>
+            <div>
+                <img src="20210927-Iliviak-TempFix.jpeg" alt="Graph for 09/27/2021" onclick="openModal('20210927-Iliviak-TempFix.jpeg')">
+                <div class="image-date">09/27/2021</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2022 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2022</div>
+            <div>
+                <img src="20220624-Iliviak-TempFix.jpeg" alt="Graph for 06/24/2022" onclick="openModal('20220624-Iliviak-TempFix.jpeg')">
+                <div class="image-date">06/24/2022</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2023 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2023</div>
+            <div>
+                <img src="20230711-Iliviak-TempFix.jpeg" alt="Graph for 07/11/2023" onclick="openModal('20230711-Iliviak-TempFix.jpeg')">
+                <div class="image-date">07/11/2023</div>
+            </div>
+            <div>
+                <img src="20230921-Iliviak-C-TempFix.jpeg" alt="Graph for 09/21/2023" onclick="openModal('20230921-Iliviak-C-TempFix.jpeg')">
+                <div class="image-date">09/21/2023</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2024 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2024</div>
+            <div>
+                <img src="20240709-Iliviak-TempFix.jpeg" alt="Graph for 07/09/2024" onclick="openModal('20240709-Iliviak-TempFix.jpeg')">
+                <div class="image-date">07/09/2024</div>
+            </div>
+            <div>
+                <img src="20240815-Iliviak-TempFix.jpeg" alt="Graph for 08/15/2024" onclick="openModal('20240815-Iliviak-TempFix.jpeg')">
+                <div class="image-date">08/15/2024</div>
+            </div>
+            <div>
+                <img src="20240925-Iliviak-TempFix.jpeg" alt="Graph for 09/25/2024" onclick="openModal('20240925-Iliviak-TempFix.jpeg')">
+                <div class="image-date">09/25/2024</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Lagoon</h2>
+    <!-- 2021 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2021</div>
+            <div>
+                <img src="20210818-Lagoon-TempFix.jpeg" alt="Graph for 08/18/2021" onclick="openModal('20210818-Lagoon-TempFix.jpeg')">
+                <div class="img-date">08/18/2021</div>
+            </div>
+            <div>
+                <img src="20210909-Lagoon-TempFix.jpeg" alt="Graph for 09/09/2021" onclick="openModal('20210909-Lagoon-TempFix.jpeg')">
+                <div class="img-date">09/09/2021</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2022 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2022</div>
+            <div>
+                <img src="20220624-Lagoon-TempFix.jpeg" alt="Graph for 06/24/2022" onclick="openModal('20220624-Lagoon-TempFix.jpeg')">
+                <div class="img-date">06/24/2022</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2023 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2023</div>
+            <div>
+                <img src="20230711-Lagoon-TempFix.jpeg" alt="Graph for 07/11/2023" onclick="openModal('20230711-Lagoon-TempFix.jpeg')">
+                <div class="img-date">07/11/2023</div>
+            </div>
+            <div>
+                <img src="20230921-Lagoon-TempFix.jpeg" alt="Graph for 09/21/2023" onclick="openModal('20230921-Lagoon-TempFix.jpeg')">
+                <div class="img-date">09/21/2023</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2024 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2024</div>
+            <div>
+                <img src="20240709-Lagoon-TempFix.jpeg" alt="Graph for 07/09/2024" onclick="openModal('20240709-Lagoon-TempFix.jpeg')">
+                <div class="img-date">07/09/2024</div>
+            </div>
+            <div>
+                <img src="20240815-Lagoon-TempFix.jpeg" alt="Graph for 08/15/2024" onclick="openModal('20240815-Lagoon-TempFix.jpeg')">
+                <div class="img-date">08/15/2024</div>
+            </div>
+            <div>
+                <img src="20240925-Lagoon-TempFix.jpeg" alt="Graph for 09/25/2024" onclick="openModal('20240925-Lagoon-TempFix.jpeg')">
+                <div class="img-date">09/25/2024</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>LP</h2>
+    <!-- 2021 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2021</div>
+            <div>
+                <img src="20210818-LP-TempFix.jpeg" alt="Graph for 08/18/2021" onclick="openModal('20210818-LP-TempFix.jpeg')">
+                <div class="image-date">08/18/2021</div>
+            </div>
+            <div>
+                <img src="20210831-LP-TempFix.jpeg" alt="Graph for 08/31/2021" onclick="openModal('20210831-LP-TempFix.jpeg')">
+                <div class="image-date">08/31/2021</div>
+            </div>
+            <div>
+                <img src="20210909-LP-TempFix.jpeg" alt="Graph for 09/09/2021" onclick="openModal('20210909-LP-TempFix.jpeg')">
+                <div class="image-date">09/09/2021</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2022 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2022</div>
+            <div>
+                <img src="20220921-LP-TempFix.jpeg" alt="Graph for 09/21/2022" onclick="openModal('20220921-LP-TempFix.jpeg')">
+                <div class="image-date">09/21/2022</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2023 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2023</div>
+            <div>
+                <img src="20230711-LP-TempFix.jpeg" alt="Graph for 07/11/2023" onclick="openModal('20230711-LP-TempFix.jpeg')">
+                <div class="image-date">07/11/2023</div>
+            </div>
+            <div>
+                <img src="20230921-LP-TempFix.jpeg" alt="Graph for 09/21/2023" onclick="openModal('20230921-LP-TempFix.jpeg')">
+                <div class="image-date">09/21/2023</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2024 Graphs Row -->
+    <div class="year-section">
+        <div class="year-row">
+            <div class="year-title">2024</div>
+            <div>
+                <img src="20240709-LP-TempFix.jpeg" alt="Graph for 07/09/2024" onclick="openModal('20240709-LP-TempFix.jpeg')">
+                <div class="image-date">07/09/2024</div>
+            </div>
+            <div>
+                <img src="20240815-LP-TempFix.jpeg" alt="Graph for 08/15/2024" onclick="openModal('20240815-LP-TempFix.jpeg')">
+                <div class="image-date">08/15/2024</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Pipe Spit</h2>
     <!-- 2022 Graphs Row -->
     <div class="year-section">
         <div class="year-row">
@@ -156,36 +470,41 @@
             </div>
         </div>
     </div>
+    
 
-    <!-- Modal for zoomed-in image -->
-    <div id="imageModal" class="modal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal for Full-Screen View -->
+    <div id="modal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <div class="modal-content">
-            <img id="modalImage" src="" alt="Zoomed Image">
+            <img id="modal-img" src="" alt="Graph Image">
         </div>
     </div>
 
     <script>
-        // Function to open the modal with the clicked image
-        function openModal(imageSrc) {
-            const modal = document.getElementById("imageModal");
-            const modalImage = document.getElementById("modalImage");
+        function openModal(src) {
+            var modal = document.getElementById("modal");
+            var modalImg = document.getElementById("modal-img");
+            modalImg.src = src;
             modal.style.display = "flex";
-            modalImage.src = imageSrc;
         }
 
-        // Function to close the modal
         function closeModal() {
-            const modal = document.getElementById("imageModal");
+            var modal = document.getElementById("modal");
             modal.style.display = "none";
-        }
-
-        // Close modal when clicking outside of the image
-        window.onclick = function(event) {
-            const modal = document.getElementById("imageModal");
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
         }
     </script>
 
