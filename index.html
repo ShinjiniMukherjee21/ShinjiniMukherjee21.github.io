@@ -10,7 +10,7 @@
             text-align: left;
             padding: 20px;
             background-color: #f4f4f4;
-            width: 75%;
+            
             margin: 0 auto;
         }
         h1 {
@@ -35,16 +35,18 @@
         }
         .year-row {
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Adjust images to start at the top */
             gap: 15px;
             margin-bottom: 10px;
-            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            flex-wrap: wrap; /* Keep this to allow images to wrap on smaller screens */
         }
+
         .year-title {
             font-size: 24px;
             font-weight: bold;
             color: #555;
             min-width: 120px;
+            min-height: 150px; /* Ensure all titles have consistent height */
         }
         .year-row img {
             width: 150px; /* Reduced the width */
