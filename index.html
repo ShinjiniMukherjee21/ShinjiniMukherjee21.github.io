@@ -9,7 +9,6 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 20px;
-            background-color: #f4f4f4;
             margin: 0 auto;
         }
         h1 {
@@ -97,11 +96,17 @@
         .close:hover {
             color: #ff8080;
         }
+        .year-2021 { background-color: #ffe5e5; } 
+        .year-2022 { background-color: #e5f5e0; } 
+        .year-2023 { background-color: #e5e9ff; } 
+        .year-2024 { background-color: #fff5e5; } 
+        
+        
     </style>
 </head>
 <body>
 
-<h1>Temperature Data Visualizations</h1>
+
 
 <table>
     <thead>
@@ -116,7 +121,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="year-2021">
             <td>08/18/2021</td>
             <td></td>
             <td><img src="20210818-LP-TempFix.jpeg" alt="08/18/2021 LP" onclick="openModal('20210818-LP-TempFix.jpeg')"></td>
@@ -126,7 +131,7 @@
             <td><img src="20210818-Channel-TempFix.jpeg" alt="08/18/2021 Channel" onclick="openModal('20210818-Channel-TempFix.jpeg')"></td>
             <td><img src="20210818-Lagoon-TempFix.jpeg" alt="08/18/2021 Lagoon" onclick="openModal('20210818-Lagoon-TempFix.jpeg')"></td>
         </tr>
-        <tr>
+        <tr class="year-2021">
             <td>08/31/2021</td>
             <td></td>
             <td><img src="20210818-LP-TempFix.jpeg" alt="08/18/2021 LP" onclick="openModal('20210818-LP-TempFix.jpeg')"></td>
@@ -136,7 +141,7 @@
             <td><img src="20210831-Channel-TempFix.jpeg" alt="08/31/2021 Channel" onclick="openModal('20210831-Channel-TempFix.jpeg')"></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="year-2021">
             <td>09/09/2021</td>
             <!-- LP, Noatak, Iliviak, Channel, Lagoon -->
             <td></td>
@@ -148,7 +153,7 @@
             
             
         </tr>
-        <tr>
+        <tr class="year-2021">
             <td>09/27/2021</td>
             <td></td>
             <td></td>
@@ -158,7 +163,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="year-2021">
             <td>10/13/2021</td>
             <td></td>
             <td></td>
@@ -171,7 +176,7 @@
         <!-- Repeat similar <tr> tags for other dates -->
         <!-- Add entries for 2022, 2023, 2024, and 2025 as needed following the same pattern -->
 
-        <tr>
+        <tr class="year-2022">
             <td>06/24/22</td>
             <!-- PS, X, Noa, Iliviak, Channel, Lagoon -->
             <td><img src="20220624-PS-B-TempFix.jpeg" alt="06/24/2022 PS-B" onclick="openModal('20220624-PS-B-TempFix.jpeg')"></td>
@@ -181,7 +186,7 @@
             <td><img src="20220624-Channel-TempFix.jpeg" alt="06/24/2022 Channel" onclick="openModal('20220624-Channel-TempFix.jpeg')"></td>
             <td><img src="20220624-Lagoon-TempFix.jpeg" alt="06/24/2022 Lagoon" onclick="openModal('20220624-Lagoon-TempFix.jpeg')"></td>
         </tr>
-        <tr>
+        <tr class="year-2022">
             <td>09/21/22</td>
             <!-- X, LP, X, X, X, X -->
             <td></td>
@@ -193,7 +198,7 @@
         </tr>
     
         <!-- 2023 Entries -->
-        <tr>
+        <tr class="year-2023">
             <td>07/11/23</td>
             <!-- X, LP, Noa, Iliviak, Channel, Lagoon -->
             <td></td>
@@ -203,7 +208,7 @@
             <td><img src="20230711-Channel-TempFix.jpeg" alt="07/11/2023 Channel" onclick="openModal('20230711-Channel-TempFix.jpeg')"></td>
             <td><img src="20230711-Lagoon-TempFix.jpeg" alt="07/11/2023 Lagoon" onclick="openModal('20230711-Lagoon-TempFix.jpeg')"></td>
         </tr>
-        <tr>
+        <tr class="year-2023">
             <td>09/21/23</td>
             <!-- X, LP, Noa, Iliviak, Channel, Lagoon -->
             <td><img src="20230921-PS-TempFix.jpeg" alt="09/21/2023 PS" onclick="openModal('20230921-PS-TempFix.jpeg')"></td>
@@ -215,7 +220,7 @@
         </tr>
     
         <!-- 2024 Entries -->
-        <tr>
+        <tr class="year-2024">
             <!-- PS, LP, Noa, Iliviak, Channel, Lagoon -->
             <td>07/09/24</td>
             <td><img src="20240709-PS-TempFix.jpeg" alt="07/09/2024 PS" onclick="openModal('20240709-PS-TempFix.jpeg')"></td>
@@ -225,7 +230,7 @@
             <td><img src="20240709-Channel-TempFix.jpeg" alt="07/09/2024 Channel" onclick="openModal('20240709-Channel-TempFix.jpeg')"></td>
             <td><img src="20240709-Lagoon-TempFix.jpeg" alt="07/09/2024 Lagoon" onclick="openModal('20240709-Lagoon-TempFix.jpeg')"></td>
         </tr>
-        <tr>
+        <tr class="year-2024">
             <td>08/12/24</td>
             <!-- PS, X, X, X, X, X -->
             <td><img src="20240812-PS-TempFix.jpeg" alt="08/12/2024 PS" onclick="openModal('20240812-PS-TempFix.jpeg')"></td>
@@ -235,7 +240,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="year-2024">
             <td>08/15/24</td>
             <!-- X, LP, Noa, Iliviak, Channel, Lagoon -->
             <td></td>
@@ -247,8 +252,8 @@
         </tr>
         <!-- 9/24: make sure Noatak's has 2025 tag to match --> 
     
-        <!-- 2025 Entries -->
-        <tr>
+        
+        <tr class="year-2024">
             <td>09/25/24</td>
             <!-- PS, X, Noa, Iliviak, Channel, Lagoon -->
             <td><img src="20240925-PS-TempFix.jpeg" alt="09/25/2024 PS" onclick="openModal('20240925-PS-TempFix.jpeg')"></td>
